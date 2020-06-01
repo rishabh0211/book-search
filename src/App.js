@@ -14,7 +14,6 @@ let initialState = {
 
 const App = () => {
   const [books, dispatch] = useReducer(booksReducer, initialState);
-  console.log(books);
   return (
     <BooksContext.Provider className="App" value={{...books, dispatch}}>
       <Header />

@@ -562,7 +562,7 @@ export const getFormattedData = () => {
   for (let i = 0; i < booksData.summaries.length; i++) {
     formattedData.push({
       title: booksData.titles[i],
-      summary: booksData.summaries[i].summary.replace(/The Book in Three Sentences: /, ''),
+      summary: booksData.summaries[i].summary.replace(/The Book in Three Sentences:/, '').trim(),
       author: booksData.authors[i].author,
     });
   }
