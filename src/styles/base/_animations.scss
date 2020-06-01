@@ -1,0 +1,22 @@
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(-5rem) scale(0.8)
+  }
+
+  80% {
+    transform: translateX(1rem) scale(1.2)
+  }
+
+  100% {
+    transform: translateX(0) scale(1)
+  }
+}
+
+@keyframes toVisible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,32 @@
+.btn {
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &--blue {
+    background-color: $color-primary-dark;
+    color: $color-white;
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($color-black, 0.2)
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn {
+
+    &:hover {
+      transform: translateY(-.3rem);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    }
+  }
+}
